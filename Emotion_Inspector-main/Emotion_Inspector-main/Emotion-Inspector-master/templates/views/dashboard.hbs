@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Emotion Inspector</title>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" />
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  
+  {{>header}}
+
+  <!-- ======= Dashboard Section ======= -->
+  <div class="chat">
+     <h1 class="dashboard" style="color: rgb(8, 0, 255);">Let's Do Chat Analysis</h1>
+
+     <div class="whatsapp">
+      <form action="results" method="get">
+         <label for="formFile" class="form-label">Upload your WhatsApp Chat file</label>
+        <img src="img/whatsapp.png" width="100px">
+        <div class="mb-3">
+          <input class="form-control" type="file" id="formFile">
+        </div>
+        <div class="col-auto">
+          <button type="submit" class="btn btn-primary mb-3" formaction="results">Upload File</button>
+        </div>
+      </form>
+    </div>
+
+     <div class="telegram">
+      <form action="results" method="get">
+        <label for="formFile" class="form-label">Upload your Telegram Chat file</label>
+        <img src="img/telegram.png" width="100px">
+        <div class="mb-3">
+          <input class="form-control" type="file" id="formFile">
+        </div>
+        <div class="col-auto">
+          <button type="submit" class="btn btn-primary mb-3"  formaction="results">Upload File</button>
+        </div>
+      </form>
+        
+    </div>
+
+     <div class="twitter">
+      <form action="results" method="get">
+         <label for="formFile" class="form-label">Upload your Twitter file</label>
+        <img src="img/twitter.png" width="100px">
+        <div class="mb-3">
+          <input class="form-control" type="file" id="formFile">
+        </div>
+        <div class="col-auto">
+          <button type="submit" class="btn btn-primary mb-3"  formaction="results">Upload File</button>
+        </div>
+      </form>
+     
+    </div>
+
+  </div>
+
+  
+  <!-- ======= END LOGIN Section ======= -->
+</body>
+
+</html>
